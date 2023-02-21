@@ -48,10 +48,6 @@
     position: absolute;
     right: -220px;
     bottom: -100px;
-
-    @include desktop-lg{
-      right: 0;
-    }
   }
 }
 

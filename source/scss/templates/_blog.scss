@@ -9,12 +9,11 @@
 
 blockquote {
   display: inline-block;
-  padding: 20px 25px;
+  padding: 10px 20px;
   background: $gray;
-  border-left: 3px solid $primary-color;
+  border-left: 2px solid $primary-color;
   font-style: italic;
   font-size: 22px;
-  line-height: 1.7;
 }
 
 .content {

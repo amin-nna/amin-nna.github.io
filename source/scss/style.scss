@@ -1,21 +1,32 @@
-@import "variables";
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
 
-@import "mixins";
+PROJECT:	Project Name
+VERSION:	Versoin Number
+-------------------------------------------------------------------*/
 
-@import "typography";
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
 
-@import "buttons";
+@import 'variables';
 
-@import "common";
+@import 'mixins';
 
-@import "templates/navigation";
+@import 'typography';
 
-@import "templates/hero-area";
+@import 'buttons';
 
-@import "templates/homepage";
+@import 'common';
 
-@import "templates/blog";
+@import 'templates/navigation';
 
-@import "templates/about";
+@import 'templates/hero-area';
 
-@import "templates/portfolio";
+@import 'templates/homepage';
+
+@import 'templates/blog';
+
+@import 'templates/about';
+
+@import 'templates/portfolio';
