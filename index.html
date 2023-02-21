@@ -1,3 +1,4 @@
+<?php include 'subscriberform.php';?>
 <!DOCTYPE html>
 
 <!--
@@ -46,7 +47,6 @@
 
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/logo.png" alt="Myself"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
             aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -57,14 +57,12 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="projects.html">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="blog.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Interests</a>
+          <a class="nav-link" href="interests.html">Interests</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -78,44 +76,20 @@
 <section class="hero-area bg-primary" id="parallax">
   <div class="container">
     <div class="row">
-      <div class="col-lg-11 mx-auto">
-        <h1 class="text-white font-tertiary">Hi! I’m <br> Amina Anna <br> </h1>
+      <div class="col-lg-11 mx-auto text-center">
+        <h2 class="text-white font-tertiary">About me</h2>
       </div>
     </div>
   </div>
   <div class="layer-bg w-100">
     <img class="img-fluid w-100" src="images/illustrations/leaf-bg.png" alt="bg-shape">
   </div>
-  <div class="layer" id="l2">
-    <img src="images/illustrations/dots-cyan.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l3">
-    <img src="images/illustrations/leaf-orange.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l4">
-    <img src="images/illustrations/dots-orange.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l5">
-    <img src="images/illustrations/leaf-yellow.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l6">
-    <img src="images/illustrations/leaf-cyan.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l7">
-    <img src="images/illustrations/dots-group-orange.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l8">
-    <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape">
-  </div>
-  <div class="layer" id="l9">
-    <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape">
-  </div>
+
   <!-- social icon -->
-  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-    <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-facebook"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-instagram"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-dribbble"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-twitter"></i></a></li>
+  <ul class="list-unstyled ml-5 mt-2 position-relative zindex-10 ">
+    <li class="mb-2"><a class="text-white" href="https://github.com/amin-nna?tab=repositories"><i class="ti-github" style="font-size:36px;" ></i></a></li>
+    <li class="mb-2"><a class="text-white" href="https://www.linkedin.com/in/amina-anna-mahamane-ousmane-385267221/"><i class="ti-linkedin" style="font-size:36px;" ></i></a></li>
+    <li class="mb-2"><a class="text-white" href="https://twitter.com/aaminnnaa"><i class="ti-twitter" style="font-size:36px;" ></i></a></li>
   </ul>
   <!-- /social icon -->
 </section>
@@ -236,61 +210,45 @@
       <div class="col-12 text-center">
         <h2 class="section-title">Projects</h2>
       </div>
-    </div>
-    <div class="row shuffle-wrapper">
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">Know more</a>
-            </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="images/portfolio/default.png" alt="post-thumb">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="single.html">Web application made with ASPNET</a>
+            </h4>
+            <p class="cars-text">Online shop using C# , SQL, Bootstrap, JavaScript, CSS, Model View Controller design pattern
+            </p>
+            <a href="single.html" class="btn btn-xs btn-primary">Read More</a>
           </div>
-        </div>
+        </article>
       </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">Know more</a>
-            </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="images/portfolio/default.png" alt="post-thumb">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="single.html">Web application made with Django</a>
+            </h4>
+            <p class="cars-text">Web application similar to a newspaper using Python, HTML, JavaScript, CSS, BootStrap, MySQL</p>
+            <a href="single.html" class="btn btn-xs btn-primary">Read More</a>
           </div>
-        </div>
+        </article>
       </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/default.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">Know more</a>
-            </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="images/insight/default.png" alt="post-thumb">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="single.html">AI Opponent</a>
+            </h4>
+            <p class="cars-text">Card game based on a decision rule used in artificial intelligence, decision theory, game theory, statistics
+              and philosophy to minimise the possible loss in the worst case scenario using Python.</p>
+            <a href="single.html" class="btn btn-xs btn-primary">Read More</a>
           </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/default.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">Know more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item">
-        <div class="position-relative rounded hover-wrapper">
-          <img src="images/portfolio/default.png" alt="portfolio-image" class="img-fluid rounded w-100">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="#!">Know more</a>
-            </div>
-          </div>
-        </div>
+        </article>
       </div>
     </div>
   </div>
 </section>
+
 <!-- /projects -->
 
 <!-- experience -->
@@ -335,12 +293,10 @@
         <article class="card shadow">
           <img class="rounded card-img-top" src="images/insight/post-1.png" alt="post-thumb">
           <div class="card-body">
-            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
+            <h4 class="card-title"><a class="text-dark" href="single.html">The great academy inc.</a>
             </h4>
-            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et
-              dolore magna aliqua.</p>
-            <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>
+            <p class="cars-text">TGAinc is a non-profit organization committed to developing culturally competent change agents who value diversity and are equipped with the critical thinking, communication, social-emotional and language skills to work collaboratively with their counterparts around the world.</p>
+            <a href="single.html" class="btn btn-xs btn-primary">Read More</a>
           </div>
         </article>
       </div>
@@ -348,12 +304,10 @@
         <article class="card shadow">
           <img class="rounded card-img-top" src="images/insight/post-2.png" alt="post-thumb">
           <div class="card-body">
-            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
+            <h4 class="card-title"><a class="text-dark" href="single.html">Robotics workshops</a>
             </h4>
-            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et
-              dolore magna aliqua.</p>
-            <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>
+            <p class="cars-text">In partnership with the National Agency for the Information Society (ANSI).  Teaching and assist groups of about 20 persons using Arduino Uno cards and sensors, Micro:bit cards, line follower and sumo robots.</p>
+            <a href="single.html" class="btn btn-xs btn-primary">Read More</a>
           </div>
         </article>
       </div>
@@ -361,93 +315,18 @@
         <article class="card shadow">
           <img class="rounded card-img-top" src="images/insight/post-3.png" alt="post-thumb">
           <div class="card-body">
-            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
+            <h4 class="card-title"><a class="text-dark" href="single.html">Algobot Niger</a>
             </h4>
-            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et
-              dolore magna aliqua.</p>
-            <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>
+            <p class="cars-text">Algobot Niger is an educational non-profit organization that focuses on teaching computer science and robotics from an early age.</p><a href="single.html" class="btn btn-xs btn-primary">Read More</a>
           </div>
         </article>
       </div>
-      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-        <article class="card shadow">
-          <img class="rounded card-img-top" src="images/insight/post-3.png" alt="post-thumb">
-          <div class="card-body">
-            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
-            </h4>
-            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et
-              dolore magna aliqua.</p>
-            <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>
-          </div>
-        </article>
-      </div>
+
     </div>
   </div>
 </section>
 <!-- /blog -->
 
-<!-- testimonial -->
-<section class="section bg-primary position-relative testimonial-bg-shapes">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title text-white mb-5">Testimonials</h2>
-      </div>
-      <div class="col-lg-10 mx-auto testimonial-slider">
-        <!-- slider-item -->
-        <div class="text-center testimonial-content">
-          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/testimonial/client-1.png"
-               alt="client-image">
-          <h4 class="text-white">Jesica Gomez</h4>
-          <h6 class="text-light mb-4">CEO, Funder</h6>
-        </div>
-        <!-- slider-item -->
-        <div class="text-center testimonial-content">
-          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation
-              ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in
-            voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur.</p>
-          <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/testimonial/client-1.png"
-               alt="client-image">
-          <h4 class="text-white">Jesica Gomez</h4>
-          <h6 class="text-light mb-4">CEO, Funder</h6>
-        </div>
-        <!-- slider-item -->
-        <div class="text-center testimonial-content">
-          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-          <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation
-              ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in
-            voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur.</p>
-          <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/testimonial/client-1.png"
-               alt="client-image">
-          <h4 class="text-white">Jesica Gomez</h4>
-          <h6 class="text-light mb-4">CEO, Funder</h6>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- bg shapes -->
-  <img src="images/backgrounds/map.png" alt="map" class="img-fluid bg-map">
-  <img src="images/illustrations/dots-group-v.png" alt="bg-shape" class="img-fluid bg-shape-1">
-  <img src="images/illustrations/leaf-orange.png" alt="bg-shape" class="img-fluid bg-shape-2">
-  <img src="images/illustrations/dots-group-sm.png" alt="bg-shape" class="img-fluid bg-shape-3">
-  <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape" class="img-fluid bg-shape-4">
-  <img src="images/illustrations/leaf-cyan.png" alt="bg-shape" class="img-fluid bg-shape-5">
-</section>
-<!-- /testimonial -->
 
 <!-- client logo slider -->
 <section class="section pb-0">
@@ -480,29 +359,40 @@
 
 <!-- contact -->
 <section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Contact Info</h2>
+        <h2 class="section-title">Contact</h2>
       </div>
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Contact Form</h4>
-          <form action="#" class="row">
-            <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4" required>
-            </div>
-            <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4" required>
-            </div>
-            <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                        placeholder="Type Message Here" required></textarea>
-            </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">send</button>
-            </div>
-          </form>
+          <div class="container">
+            <form id="contact" action="" method="post">
+              <div class="col-md-6">
+                <input placeholder="Your name" name="name" type="text" class="form-control px-0 mb-4" autofocus required>
+              </div>
+              <div class="col-md-6">
+                <input placeholder="Your Email Address" name="email" type="email" class="form-control px-0 mb-4" required>
+              </div>
+              <div class="col-md-6">
+                <input placeholder="Your Phone Number" name="tel" type="tel" class="form-control px-0 mb-4" required>
+              </div>
+              <div class="col-md-6">
+                <input placeholder="Type your subject line" type="text" name="subject" class="form-control px-0 mb-4" required>
+              </div>
+              <div class="col-12">
+                <textarea name="message" placeholder="Type your Message Details Here..." class="form-control px-0 mb-4" required></textarea>
+              </div>
+              <div>
+                <p class="success"> <?php echo $success;  ?></p>
+                <p class="failed"> <?php echo $failed;  ?></p>
+              </div>
+              <div>
+                <button  class="btn btn-primary w-100" type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -512,29 +402,11 @@
 
 <!-- footer -->
 <footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">+880 2544 658 256</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="border-top text-center border-dark py-5">
     <p class="mb-0 text-light">Copyright &copy;<script>
       var CurrentYear = new Date().getFullYear()
       document.write(CurrentYear)
-    </script> Designed &amp; Developed by <a class="text-white-50" href="Themefisher">Themefisher</a></p>
+    </script> Designed &amp; Developed by <a class="text-white-50" href="https://www.linkedin.com/in/amina-anna-mahamane-ousmane-385267221/">amin-nna</a></p>
   </div>
 </footer>
 <!-- /footer -->
