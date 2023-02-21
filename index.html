@@ -64,7 +64,7 @@
           <a class="nav-link" href="interests.html">Interests</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="mailto:aaminnnaa@gmail.com">Contact</a>
         </li>
       </ul>
     </div>
@@ -333,42 +333,16 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title"></h2>
       </div>
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
-          <div class="container">
-            <form id="contact" action="subscriberform.php" method="post">
-              <div class="col-md-6">
-                <input placeholder="Your name" name="name" type="text" class="form-control px-0 mb-4" autofocus required>
-              </div>
-              <div class="col-md-6">
-                <input placeholder="Your Email Address" name="email" type="email" class="form-control px-0 mb-4" required>
-              </div>
-              <div class="col-md-6">
-                <input placeholder="Your Phone Number" name="tel" type="tel" class="form-control px-0 mb-4" required>
-              </div>
-              <div class="col-md-6">
-                <input placeholder="Type your subject line" type="text" name="subject" class="form-control px-0 mb-4" required>
-              </div>
-              <div class="col-12">
-                <textarea name="message" placeholder="Type your Message Details Here..." class="form-control px-0 mb-4" required></textarea>
-              </div>
-              <?php if(isset($success)): ?>
-              <div>
-                <p class="success"><?php echo $success; ?></p>
-              </div>
-              <?php endif; ?>
-              <?php if(isset($failed)): ?>
-              <div>
-                <p class="failed"><?php echo $failed; ?></p>
-              </div>
-              <?php endif; ?>
-              <div>
-                <button class="btn btn-primary w-100" type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
-              </div>
-            </form>
-          </div>
+          <h4 class="mb-80"></h4>
+          <form action="mailto:aaminnnaa@gmail.com" method="post" enctype="text/plain" class="row">
+            <div class="col-lg-6 col-10 mx-auto">
+              <button class="btn btn-primary w-100">Contact</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
