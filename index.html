@@ -1,4 +1,4 @@
-<?php include 'subscriberform.php';?>
+
 <!DOCTYPE html>
 
 <!--
@@ -57,7 +57,6 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" href="projects.html">Projects</a>
         </li>
@@ -328,35 +327,6 @@
 <!-- /blog -->
 
 
-<!-- client logo slider -->
-<section class="section pb-0">
-  <div class="container">
-    <div class="client-logo-slider d-flex align-items-center">
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                            src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                            src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                            src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                            src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                            src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                            src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                            src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                            src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                            src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
-      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                            src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
-    </div>
-  </div>
-</section>
-<!-- /client logo slider -->
-
 <!-- contact -->
 <section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
 
@@ -368,7 +338,7 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
           <div class="container">
-            <form id="contact" action="" method="post">
+            <form id="contact" action="subscriberform.php" method="post">
               <div class="col-md-6">
                 <input placeholder="Your name" name="name" type="text" class="form-control px-0 mb-4" autofocus required>
               </div>
@@ -384,12 +354,18 @@
               <div class="col-12">
                 <textarea name="message" placeholder="Type your Message Details Here..." class="form-control px-0 mb-4" required></textarea>
               </div>
+              <?php if(isset($success)): ?>
               <div>
-                <p class="success"> <?php echo $success;  ?></p>
-                <p class="failed"> <?php echo $failed;  ?></p>
+                <p class="success"><?php echo $success; ?></p>
               </div>
+              <?php endif; ?>
+              <?php if(isset($failed)): ?>
               <div>
-                <button  class="btn btn-primary w-100" type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
+                <p class="failed"><?php echo $failed; ?></p>
+              </div>
+              <?php endif; ?>
+              <div>
+                <button class="btn btn-primary w-100" type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
               </div>
             </form>
           </div>
