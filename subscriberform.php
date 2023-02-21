@@ -36,12 +36,11 @@ if(isset($_POST['submit'])) {
     }
 
     // Debugging: check the values of variables and error messages
-    // echo "To: " . $mailto . "<br>";
-    // echo "Subject: " . $subject . "<br>";
-    // echo "Message: " . $message . "<br>";
-    // echo "Headers: " . $headers . "<br>";
-    // echo "Result1: " . $result1 . "<br>";
-    // echo "Result2: " . $result2 . "<br>";
-    // echo "Error message: " . error_get_last()['message'] . "<br>";
+    echo "To: " . $mailto . "<br>";
+    echo "Subject: " . $subject . "<br>";
+    echo "Message: " . $message . "<br>";
+    echo "Headers: " . $headers . "<br>";
+    echo "Result1: " . $result1 . "<br>";
+    echo "Result2: " . $result2 . "<br>";
 }
 ?>
