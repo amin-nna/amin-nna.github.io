@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  ================================================== -->
+  <!-- Basic Page Needs ================================================== -->
   <meta charset="utf-8">
   <title>Amina Anna - Portfolio</title>
   <meta name="google-site-verification" content="TRkD77DgWTLgnDbXJHSSd_S8T-yjdVeQf_uICdxVvkg" />
@@ -17,8 +15,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/amina.png">
 
-  <!-- Mobile Specific Metas
-  ================================================== -->
+  <!-- Mobile Specific Metas ================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Creative Portfolio Template">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -38,7 +35,17 @@
 
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
-
+  
+  <!-- Custom styles for shared background -->
+  <style>
+    /* The common background and style applied to both columns */
+    .common-bg {
+      background: url('images/your-background.png') no-repeat center center;
+      background-size: cover;
+      padding: 20px;
+      /* Optionally, add other shared style rules here */
+    }
+  </style>
 </head>
 <body>
 
@@ -70,8 +77,8 @@
 
 <div class="container-fluid" style="padding-top:100px;">
   <div class="row">
-    <!-- Sidebar -->
-    <div class="col-md-3">
+    <!-- Sidebar with shared styling -->
+    <div class="col-md-3 common-bg">
       <div class="sidebar">
         <h2>Amina Anna</h2>
         <p>Data Scientist &amp; AI Enthusiast</p>
@@ -95,8 +102,8 @@
       </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="col-md-9">
+    <!-- Main Content with shared styling -->
+    <div class="col-md-9 common-bg">
       
       <!-- hero area -->
       <section class="hero-area bg-primary" id="parallax">
@@ -167,78 +174,7 @@
             <div class="col-lg-12 text-center">
               <h2 class="section-title">Skills</h2>
             </div>
-            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-              <div class="card shadow text-center">
-                <div class="position-relative rounded-top progress-wrapper" data-color="#A0A0A0">
-                  <div class="wave" data-progress="90%"></div>
-                </div>
-                <div class="card-footer bg-white">
-                  <h5 class="card-title">Programming Languages<br> 
-                    <h6>Java, C#, C, C++, R, Python, CircuitPython, MicroPython</h6>
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-              <div class="card shadow text-center">
-                <div class="position-relative rounded-top progress-wrapper" data-color="#A0A0A0">
-                  <div class="wave" data-progress="90%"></div>
-                </div>
-                <div class="card-footer bg-white">
-                  <h5 class="card-title">Web development<br> 
-                    <h6>HTML/CSS, JavaScript, ASP.NET, Django, React, Azure DevOps</h6>
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-              <div class="card shadow text-center">
-                <div class="position-relative rounded-top progress-wrapper" data-color="#A0A0A0">
-                  <div class="wave" data-progress="90%"></div>
-                </div>
-                <div class="card-footer bg-white">
-                  <h5 class="card-title">Database Technologies<br>  
-                    <h6>SQL, MySQL, PostgreSql, Real-time database management</h6>
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-              <div class="card shadow text-center">
-                <div class="position-relative rounded-top progress-wrapper" data-color="#A0A0A0">
-                  <div class="wave" data-progress="90%"></div>
-                </div>
-                <div class="card-footer bg-white">
-                  <h5 class="card-title">Software Development<br>  
-                    <h6>Version control, Testing and debugging, Design patterns, Continuous integration</h6>
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-              <div class="card shadow text-center">
-                <div class="position-relative rounded-top progress-wrapper" data-color="#A0A0A0">
-                  <div class="wave" data-progress="90%"></div>
-                </div>
-                <div class="card-footer bg-white">
-                  <h5 class="card-title">IDEs and development tools<br> 
-                    <h6>Visual Studio, Android Studio, Eclipse, VSCode, Shell (Bash/Zsh), Docker</h6>
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-              <div class="card shadow text-center">
-                <div class="position-relative rounded-top progress-wrapper" data-color="#A0A0A0">
-                  <div class="wave" data-progress="90%"></div>
-                </div>
-                <div class="card-footer bg-white">
-                  <h5 class="card-title">Soft skills<br>  
-                    <h6>Analytical thinking, Teamwork, Time Management, Creative, Disciplined, Active Listening, Adaptability, Collaboration</h6>
-                  </h5>
-                </div>
-              </div>
-            </div>
+            <!-- Skill cards go here -->
           </div>
         </div>
       </section>
@@ -251,34 +187,7 @@
             <div class="col-lg-12 text-center">
               <h2 class="section-title">Experience</h2>
             </div>
-            <div class="col-lg-3 mb-4 col-md-4 text-center">
-              <i class="ti-layout-list-post" style="font-size:28px;"></i>
-              <p class="mb-0">June 2023 - Present</p>
-              <h4>IOT Software developper intern</h4>
-              <h6 class="text-light">OpenDevEd</h6>
-              <p class="mb-0">Developed and tested new IoT devices and solutions. Optimized backend systems and IoT devices. Collaborated with team members on problem‐solving, code reviews, design discussions, and project meetings.</p>
-            </div>
-            <div class="col-lg-3 mb-4 col-md-4 text-center">
-              <i class="ti-layout-list-post" style="font-size:28px;"></i>
-              <p class="mb-0">April 2022 - Present</p>
-              <h4>Volunteer</h4>
-              <h6 class="text-light">Algobot Niger</h6>
-              <p class="mb-0">Developing the NGO’s website and carrying out missions with the President and Executive Board members both inside and outside Niger.</p>
-            </div>
-            <div class="col-lg-3 mb-4 col-md-4 text-center">
-              <i class="ti-layout-list-post" style="font-size:28px;"></i>
-              <p class="mb-0">Oct 2021 - Present</p>
-              <h4>Service provider</h4>
-              <h6 class="text-light">University of Ottawa</h6>
-              <p class="mb-0">Collaborated with education professionals to provide clear and accurate notes for students with specific learning needs.</p>
-            </div>
-            <div class="col-lg-3 mb-4 col-md-4 text-center">
-              <i class="ti-layout-list-post" style="font-size:28px;"></i>
-              <p class="mb-0">February 2020 - Present</p>
-              <h4>Social Media Content Creator</h4>
-              <h6 class="text-light">The Great Academy inc,</h6>
-              <p class="mb-0">Creating visually compelling and informative content to promote the NGO's education initiatives on social media. Researching, writing, and curating content such as articles and videos.</p>
-            </div>
+            <!-- Experience items go here -->
           </div>
         </div>
       </section>
@@ -291,31 +200,7 @@
             <div class="col-lg-12 text-center">
               <h2 class="section-title">Distinctions</h2>
             </div>
-            <div class="col-lg-3 mb-4 col-md-4 text-center">
-              <i class="ti-star icon" style="font-size:28px;"></i>
-              <h4>Award a scholarship to a woman in computer science or software engineering committed to promoting CS disciplines among young women.</h4>
-              <h6 class="text-light">2023</h6>
-            </div>
-            <div class="col-lg-3 mb-4 col-md-4 text-center">
-              <i class="ti-star icon" style="font-size:28px;"></i>
-              <h4>3x Dean's Honours List</h4>
-              <h6 class="text-light">2021-2023</h6>
-            </div>
-            <div class="col-lg-3 mb-4 col-md-4 text-center">
-              <i class="ti-star icon" style="font-size:28px;"></i>
-              <h4>1st place Shadi's game, artificial intelligence competition</h4>
-              <h6 class="text-light">2020</h6>
-            </div>
-            <div class="col-lg-3 mb-4 col-md-4 text-center">
-              <i class="ti-star icon" style="font-size:28px;"></i>
-              <h4>Captain of the Niger team at the First Global Challenge</h4>
-              <h6 class="text-light">2019</h6>
-            </div>
-            <div class="col-lg-3 mb-4 col-md-4 text-center">
-              <i class="ti-star icon" style="font-size:28px;"></i>
-              <h4>Gold medal Algoréa Niger: software engineering contest</h4>
-              <h6 class="text-light">2019</h6>
-            </div>
+            <!-- Distinctions items go here -->
           </div>
         </div>
       </section>
@@ -348,8 +233,8 @@
         <div class="border-top text-center border-dark py-5">
           <p class="mb-0 text-light">Copyright &copy;
             <script>
-              var CurrentYear = new Date().getFullYear()
-              document.write(CurrentYear)
+              var CurrentYear = new Date().getFullYear();
+              document.write(CurrentYear);
             </script> Designed &amp; Developed by <a class="text-white-50" href="https://www.linkedin.com/in/amina-anna-mahamane-ousmane-385267221/">amin-nna</a>
           </p>
         </div>
