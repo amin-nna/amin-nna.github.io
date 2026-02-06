@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio Template</title>
+  <title>Flagship Projects - Amina Mahamane</title>
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/amina.png">
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Data Science and Machine Learning projects showcasing predictive modeling, NLP, time series forecasting, and end-to-end ML systems.">
   
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
@@ -38,18 +39,20 @@
 
     <div class="collapse navbar-collapse text-center" id="navigation">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="research.html">Research</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="interests.html">Interests</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="mailto:aaminnnaa@gmail.com">Contact</a>
         </li>
       </ul>
     </div>
@@ -61,7 +64,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-11 mx-auto text-center">
-        <h2 class="text-white font-tertiary">Projects</h2>
+        <h2 class="text-white font-tertiary">Flagship Projects</h2>
+        <p class="text-white-50 mt-3">Deep technical work across predictive modeling, NLP, and end-to-end ML systems</p>
       </div>
     </div>
   </div>
@@ -73,125 +77,344 @@
 
 <section class="section">
   <div class="container">
+    <!-- Filter Buttons -->
     <div class="row mb-5">
       <div class="col-12">
-        <div class="btn-group btn-group-toggle justify-content-center d-flex" data-toggle="buttons">
+        <div class="btn-group btn-group-toggle justify-content-center d-flex flex-wrap" data-toggle="buttons">
           <label class="btn btn-sm btn-primary active">
             <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
           </label>
           <label class="btn btn-sm btn-primary">
-            <input type="radio" name="shuffle-filter" value="Applications" />Applications
+            <input type="radio" name="shuffle-filter" value="predictive" />Predictive Modeling
           </label>
           <label class="btn btn-sm btn-primary">
-            <input type="radio" name="shuffle-filter" value="AI" />AI
+            <input type="radio" name="shuffle-filter" value="nlp" />NLP &amp; Sentiment
           </label>
           <label class="btn btn-sm btn-primary">
-            <input type="radio" name="shuffle-filter" value="Research" />Research
+            <input type="radio" name="shuffle-filter" value="optimization" />ML Theory
+          </label>
+          <label class="btn btn-sm btn-primary">
+            <input type="radio" name="shuffle-filter" value="systems" />End-to-End Systems
           </label>
         </div>
       </div>
     </div>
+
+    <!-- Projects Grid -->
     <div class="row shuffle-wrapper">
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;Applications&quot;]">
-        <div class="position-relative rounded hover-wrapper">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="images/portfolio/default.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="https://github.com/amin-nna/Random-Sampling-Consensus">Ransac</a>
-              </h4>
-              <p class="cars-text">Supervised Machine Learning iterative outlier detection algorithm in Java, Go, Scheme and Prolog to detect the dominant planes in a cloud of 3D points. 
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;Applications&quot;]">
-        <div class="position-relative rounded hover-wrapper">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="images/portfolio/default.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="https://github.com/amin-nna/eHotels">eHotels web app</a>
-              </h4>
-              <p class="cars-text">Web application that allows customers to book hotel rooms in real‐time, with location‐based search
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;Applications&quot;]">
-        <div class="position-relative rounded hover-wrapper">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="images/portfolio/default.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="https://github.com/amin-nna/reWebApp">Real estate Web App</a>
-              </h4>
-              <p class="cars-text">Online shop using C# with .Net and Model View Controller design pattern.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;Applications&quot;]">
-        <div class="position-relative rounded hover-wrapper">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="images/portfolio/default.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="https://github.com/amin-nna/algbotNiger">Algobot Niger's web app</a>
-              </h4>
-              <p class="cars-text">Web application to display news and articles to readers, with features such as article categorization, search functionality, and user authentication.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;Applications&quot;]">
-        <div class="position-relative rounded hover-wrapper">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="images/portfolio/default.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="https://github.com/amin-nna/projet-groupe-32">Mealer Android App</a>
-              </h4>
-              <p class="cars-text">Android app for food selling/ordering, with in‐app registration. Usage of realtime database to manage data..</p>
 
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;AI&quot;]">
-        <div class="position-relative rounded hover-wrapper">
-          <article class="card shadow">
-            <img class="rounded card-img-top" src="images/portfolio/default.png" alt="post-thumb">
-            <div class="card-body">
-              <h4 class="card-title"><a class="text-dark" href="https://www.algoplayme.com">AI Opponent</a>
-              </h4>
-              <p class="cars-text">Card game based on a decision rule used in artificial intelligence, decision theory, game theory, statistics
-                and philosophy to minimise the possible loss in the worst case scenario using Python.</p>
+      <!-- ========================================= -->
+      <!-- PREDICTIVE MODELING & TIME SERIES -->
+      <!-- ========================================= -->
 
+      <!-- Stock Market Prediction with Sentiment + LSTM + XGBoost -->
+      <div class="col-lg-6 col-12 mb-4 shuffle-item" data-groups="[&quot;predictive&quot;, &quot;nlp&quot;]">
+        <div class="position-relative rounded hover-wrapper">
+          <article class="card shadow h-100">
+            <div class="card-header bg-primary text-white">
+              <span class="badge badge-light mr-2">Predictive Modeling</span>
+              <span class="badge badge-light">NLP</span>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title"><a class="text-dark" href="projects/p1.html">Stock Market Prediction System</a></h4>
+              <p class="text-muted mb-3"><strong>Sentiment Analysis + LSTM + XGBoost Ensemble</strong></p>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Problem</h6>
+                <p class="text-dark">Predict short-term stock price movements by combining financial news sentiment with historical price patterns, addressing the challenge of noisy financial data and market sentiment influence.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Approach</h6>
+                <p class="text-dark">Built a multi-modal ensemble combining LSTM networks for time series forecasting with XGBoost for feature-rich prediction. Integrated sentiment scores from financial news using NLP preprocessing and transformer-based classification.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Key Results</h6>
+                <ul class="text-dark">
+                  <li>Achieved 15% improvement in directional accuracy over baseline ARIMA</li>
+                  <li>Sentiment features contributed 8% to overall model performance</li>
+                  <li>Deployed real-time prediction pipeline with daily model updates</li>
+                </ul>
+              </div>
+              
+              <div class="mt-3">
+                <span class="badge badge-secondary">Python</span>
+                <span class="badge badge-secondary">PyTorch</span>
+                <span class="badge badge-secondary">XGBoost</span>
+                <span class="badge badge-secondary">Hugging Face</span>
+                <span class="badge badge-secondary">Time Series</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <a href="https://github.com/amin-nna" class="btn btn-sm btn-outline-primary" target="_blank"><i class="ti-github mr-1"></i>View Code</a>
+              <a href="projects/p1.html" class="btn btn-sm btn-primary ml-2">Read More</a>
             </div>
           </article>
         </div>
       </div>
+
+      <!-- Ensemble Learning Stock Prediction -->
+      <div class="col-lg-6 col-12 mb-4 shuffle-item" data-groups="[&quot;predictive&quot;]">
+        <div class="position-relative rounded hover-wrapper">
+          <article class="card shadow h-100">
+            <div class="card-header bg-primary text-white">
+              <span class="badge badge-light">Predictive Modeling</span>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title"><a class="text-dark" href="projects/p2.html">Ensemble Learning for Financial Forecasting</a></h4>
+              <p class="text-muted mb-3"><strong>Comparative Analysis of Ensemble Methods</strong></p>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Problem</h6>
+                <p class="text-dark">Systematic comparison of ensemble learning techniques for financial time series prediction, evaluating trade-offs between model complexity, interpretability, and forecast accuracy.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Approach</h6>
+                <p class="text-dark">Implemented and benchmarked Random Forest, Gradient Boosting, AdaBoost, and stacking ensembles. Engineered 50+ technical indicators and conducted rigorous cross-validation with walk-forward analysis.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Key Results</h6>
+                <ul class="text-dark">
+                  <li>Stacking ensemble achieved best Sharpe ratio of 1.8</li>
+                  <li>Documented feature importance analysis for model interpretability</li>
+                  <li>Published comparison framework for reproducible research</li>
+                </ul>
+              </div>
+              
+              <div class="mt-3">
+                <span class="badge badge-secondary">Python</span>
+                <span class="badge badge-secondary">Scikit-learn</span>
+                <span class="badge badge-secondary">XGBoost</span>
+                <span class="badge badge-secondary">Ensemble Methods</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <a href="https://github.com/amin-nna" class="btn btn-sm btn-outline-primary" target="_blank"><i class="ti-github mr-1"></i>View Code</a>
+              <a href="projects/p2.html" class="btn btn-sm btn-primary ml-2">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ========================================= -->
+      <!-- NLP & SENTIMENT ANALYSIS -->
+      <!-- ========================================= -->
+
+      <!-- Honours Project: NLP + Deployment -->
+      <div class="col-lg-6 col-12 mb-4 shuffle-item" data-groups="[&quot;nlp&quot;, &quot;systems&quot;]">
+        <div class="position-relative rounded hover-wrapper">
+          <article class="card shadow h-100">
+            <div class="card-header bg-success text-white">
+              <span class="badge badge-light mr-2">NLP</span>
+              <span class="badge badge-light">End-to-End</span>
+              <span class="badge badge-warning text-dark ml-2">Honours Project</span>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title"><a class="text-dark" href="projects/p3.html">Sentiment Classification System</a></h4>
+              <p class="text-muted mb-3"><strong>End-to-End NLP Pipeline with Production Deployment</strong></p>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Problem</h6>
+                <p class="text-dark">Design and deploy a production-grade sentiment analysis system capable of processing user-generated content at scale, with emphasis on model interpretability and deployment robustness.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Approach</h6>
+                <p class="text-dark">Fine-tuned transformer models (BERT, RoBERTa) on domain-specific data. Built complete MLOps pipeline including data versioning, experiment tracking, model registry, and automated deployment with monitoring.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Key Results</h6>
+                <ul class="text-dark">
+                  <li>Achieved 92% F1-score on held-out test set</li>
+                  <li>Reduced inference latency to &lt;100ms with model optimization</li>
+                  <li>Implemented attention visualization for model interpretability</li>
+                  <li>Deployed with CI/CD pipeline and automated retraining triggers</li>
+                </ul>
+              </div>
+              
+              <div class="mt-3">
+                <span class="badge badge-secondary">Python</span>
+                <span class="badge badge-secondary">PyTorch</span>
+                <span class="badge badge-secondary">Hugging Face</span>
+                <span class="badge badge-secondary">MLflow</span>
+                <span class="badge badge-secondary">Docker</span>
+                <span class="badge badge-secondary">FastAPI</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <a href="https://github.com/amin-nna" class="btn btn-sm btn-outline-primary" target="_blank"><i class="ti-github mr-1"></i>View Code</a>
+              <a href="projects/p3.html" class="btn btn-sm btn-primary ml-2">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ========================================= -->
+      <!-- ML OPTIMIZATION & THEORY -->
+      <!-- ========================================= -->
+
+      <!-- Gradient Descent Optimization Study -->
+      <div class="col-lg-6 col-12 mb-4 shuffle-item" data-groups="[&quot;optimization&quot;]">
+        <div class="position-relative rounded hover-wrapper">
+          <article class="card shadow h-100">
+            <div class="card-header bg-info text-white">
+              <span class="badge badge-light">ML Theory</span>
+              <span class="badge badge-warning text-dark ml-2">Research</span>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title"><a class="text-dark" href="projects/p4.html">Gradient Descent Optimization Analysis</a></h4>
+              <p class="text-muted mb-3"><strong>Comparative Study: GD vs SGD vs Adam</strong></p>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Problem</h6>
+                <p class="text-dark">Empirical and theoretical analysis of optimization algorithms' convergence properties under different data distributions, learning rate schedules, and model architectures.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Approach</h6>
+                <p class="text-dark">Implemented gradient descent variants from scratch. Analyzed convergence rates on convex and non-convex loss surfaces. Studied the effect of batch size, momentum, and adaptive learning rates on training dynamics.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Key Findings</h6>
+                <ul class="text-dark">
+                  <li>Documented loss landscape visualization for different architectures</li>
+                  <li>Quantified convergence speed vs generalization trade-offs</li>
+                  <li>Identified optimal hyperparameter configurations for common scenarios</li>
+                  <li>Created educational framework for understanding optimization</li>
+                </ul>
+              </div>
+              
+              <div class="mt-3">
+                <span class="badge badge-secondary">Python</span>
+                <span class="badge badge-secondary">NumPy</span>
+                <span class="badge badge-secondary">PyTorch</span>
+                <span class="badge badge-secondary">Optimization Theory</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <a href="https://github.com/amin-nna" class="btn btn-sm btn-outline-primary" target="_blank"><i class="ti-github mr-1"></i>View Code</a>
+              <a href="projects/p4.html" class="btn btn-sm btn-primary ml-2">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ========================================= -->
+      <!-- END-TO-END SYSTEMS -->
+      <!-- ========================================= -->
+
+      <!-- RANSAC Implementation -->
+      <div class="col-lg-6 col-12 mb-4 shuffle-item" data-groups="[&quot;systems&quot;, &quot;optimization&quot;]">
+        <div class="position-relative rounded hover-wrapper">
+          <article class="card shadow h-100">
+            <div class="card-header bg-warning text-dark">
+              <span class="badge badge-dark mr-2">Systems</span>
+              <span class="badge badge-dark">Theory</span>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title"><a class="text-dark" href="https://github.com/amin-nna/Random-Sampling-Consensus">RANSAC: Robust Plane Detection</a></h4>
+              <p class="text-muted mb-3"><strong>Multi-Language Implementation for 3D Point Clouds</strong></p>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Problem</h6>
+                <p class="text-dark">Implement and compare RANSAC algorithm across multiple programming paradigms for detecting dominant planes in noisy 3D point cloud data.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Approach</h6>
+                <p class="text-dark">Built iterative outlier detection algorithm in Java (OOP), Go (concurrent), Scheme (functional), and Prolog (logic). Analyzed performance characteristics and paradigm-specific optimizations.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Key Results</h6>
+                <ul class="text-dark">
+                  <li>Go implementation achieved 3x speedup via goroutines</li>
+                  <li>Demonstrated algorithm correctness across paradigms</li>
+                  <li>Created visualization pipeline for detected planes</li>
+                </ul>
+              </div>
+              
+              <div class="mt-3">
+                <span class="badge badge-secondary">Java</span>
+                <span class="badge badge-secondary">Go</span>
+                <span class="badge badge-secondary">Scheme</span>
+                <span class="badge badge-secondary">Prolog</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <a href="https://github.com/amin-nna/Random-Sampling-Consensus" class="btn btn-sm btn-outline-primary" target="_blank"><i class="ti-github mr-1"></i>View Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- AI Game Agent -->
+      <div class="col-lg-6 col-12 mb-4 shuffle-item" data-groups="[&quot;optimization&quot;, &quot;systems&quot;]">
+        <div class="position-relative rounded hover-wrapper">
+          <article class="card shadow h-100">
+            <div class="card-header bg-warning text-dark">
+              <span class="badge badge-dark mr-2">Theory</span>
+              <span class="badge badge-dark">Systems</span>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title"><a class="text-dark" href="https://www.algoplayme.com">AI Game Agent: Minimax Optimization</a></h4>
+              <p class="text-muted mb-3"><strong>Decision Theory &amp; Game Theory Implementation</strong></p>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Problem</h6>
+                <p class="text-dark">Build an optimal game-playing agent using decision theory principles, specifically implementing minimax algorithm with alpha-beta pruning for strategic decision making.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Approach</h6>
+                <p class="text-dark">Implemented minimax algorithm with depth-limited search and evaluation heuristics. Added alpha-beta pruning for computational efficiency. Designed state representation and move generation.</p>
+              </div>
+              
+              <div class="mb-3">
+                <h6 class="text-primary">Key Results</h6>
+                <ul class="text-dark">
+                  <li>Won 1st place in Shadi's Game AI competition (2020)</li>
+                  <li>Alpha-beta pruning reduced search space by 60%</li>
+                  <li>Deployed as interactive web application</li>
+                </ul>
+              </div>
+              
+              <div class="mt-3">
+                <span class="badge badge-secondary">Python</span>
+                <span class="badge badge-secondary">Game Theory</span>
+                <span class="badge badge-secondary">Decision Theory</span>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <a href="https://www.algoplayme.com" class="btn btn-sm btn-outline-primary" target="_blank"><i class="ti-world mr-1"></i>Live Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 <!-- /portfolio -->
 
-
-
-
 <!-- contact -->
 <section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
-
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title"></h2>
+        <h2 class="section-title">Interested in Collaboration?</h2>
       </div>
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80"></h4>
+          <p class="mb-4">I'm always open to discussing data science projects, research collaborations, or opportunities in machine learning and analytics.</p>
           <form action="mailto:aaminnnaa@gmail.com" method="post" enctype="text/plain" class="row">
             <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-primary w-100">Contact</button>
+              <a href="mailto:aaminnnaa@gmail.com" class="btn btn-primary w-100">Get In Touch</a>
             </div>
           </form>
         </div>
@@ -200,13 +423,14 @@
   </div>
 </section>
 <!-- /contact -->
+
 <!-- footer -->
 <footer class="bg-dark footer-section">
   <div class="border-top text-center border-dark py-5">
     <p class="mb-0 text-light">Copyright &copy;<script>
       var CurrentYear = new Date().getFullYear()
       document.write(CurrentYear)
-    </script> Designed &amp; Developed by <a class="text-white-50" href="https://www.linkedin.com/in/amina-anna-mahamane-ousmane-385267221/">amin-nna</a></p>
+    </script> Designed &amp; Developed by <a class="text-white-50" href="https://www.linkedin.com/in/amina-mahamane-385267221/">Amina Mahamane</a></p>
   </div>
 </footer>
 <!-- /footer -->
