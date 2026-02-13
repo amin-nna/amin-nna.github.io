@@ -1,1 +1,1 @@
-aminaannnamahamane.github.io
+aminaannamahamane.github.io
