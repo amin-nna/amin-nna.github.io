@@ -44,9 +44,9 @@
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: #41228e;
+      background: #1a1a2e;
       border: 2px solid #fff;
-      box-shadow: 0 0 0 2px #41228e;
+      box-shadow: 0 0 0 2px #1a1a2e;
     }
     .timeline-item:last-child {
       padding-bottom: 0;
@@ -83,7 +83,97 @@
     }
     .hero-minimal {
       padding: 120px 0 80px;
-      background: #41228e;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Floating Math Symbols Animation */
+    .math-symbols {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .math-symbol {
+      position: absolute;
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.08);
+      font-family: 'Times New Roman', serif;
+      animation: float-rotate 20s infinite ease-in-out;
+    }
+    
+    .math-symbol:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; font-size: 3rem; }
+    .math-symbol:nth-child(2) { top: 20%; left: 25%; animation-delay: -3s; font-size: 2.5rem; }
+    .math-symbol:nth-child(3) { top: 60%; left: 10%; animation-delay: -5s; font-size: 2rem; }
+    .math-symbol:nth-child(4) { top: 30%; left: 70%; animation-delay: -7s; font-size: 3.5rem; }
+    .math-symbol:nth-child(5) { top: 70%; left: 80%; animation-delay: -9s; font-size: 2rem; }
+    .math-symbol:nth-child(6) { top: 40%; left: 45%; animation-delay: -11s; font-size: 2.8rem; }
+    .math-symbol:nth-child(7) { top: 80%; left: 30%; animation-delay: -13s; font-size: 2.2rem; }
+    .math-symbol:nth-child(8) { top: 15%; left: 85%; animation-delay: -15s; font-size: 3rem; }
+    .math-symbol:nth-child(9) { top: 50%; left: 60%; animation-delay: -17s; font-size: 2.6rem; }
+    .math-symbol:nth-child(10) { top: 85%; left: 55%; animation-delay: -19s; font-size: 2rem; }
+    .math-symbol:nth-child(11) { top: 25%; left: 15%; animation-delay: -2s; font-size: 2.4rem; }
+    .math-symbol:nth-child(12) { top: 45%; left: 90%; animation-delay: -8s; font-size: 3.2rem; }
+    
+    @keyframes float-rotate {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.08;
+      }
+      25% {
+        transform: translateY(-20px) rotate(90deg);
+        opacity: 0.15;
+      }
+      50% {
+        transform: translateY(-10px) rotate(180deg);
+        opacity: 0.08;
+      }
+      75% {
+        transform: translateY(-30px) rotate(270deg);
+        opacity: 0.12;
+      }
+    }
+    
+    /* Page background floating symbols */
+    .page-bg-symbols {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: -1;
+    }
+    
+    .page-bg-symbols .math-symbol {
+      color: rgba(26, 26, 46, 0.04);
+      animation: float-rotate-page 30s infinite ease-in-out;
+    }
+    
+    @keyframes float-rotate-page {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.04;
+      }
+      25% {
+        transform: translateY(-30px) rotate(90deg);
+        opacity: 0.07;
+      }
+      50% {
+        transform: translateY(-15px) rotate(180deg);
+        opacity: 0.04;
+      }
+      75% {
+        transform: translateY(-40px) rotate(270deg);
+        opacity: 0.06;
+      }
     }
     .section-minimal {
       padding: 60px 0;
@@ -119,9 +209,39 @@
   </nav>
 </header>
 
+<!-- Background Floating Symbols -->
+<div class="page-bg-symbols">
+  <span class="math-symbol">Δ</span>
+  <span class="math-symbol">Σ</span>
+  <span class="math-symbol">λ</span>
+  <span class="math-symbol">∫</span>
+  <span class="math-symbol">π</span>
+  <span class="math-symbol">∞</span>
+  <span class="math-symbol">√</span>
+  <span class="math-symbol">∂</span>
+  <span class="math-symbol">θ</span>
+  <span class="math-symbol">Ω</span>
+  <span class="math-symbol">∇</span>
+  <span class="math-symbol">ε</span>
+</div>
+
 <!-- Hero -->
 <section class="hero-minimal">
-  <div class="container">
+  <div class="math-symbols">
+    <span class="math-symbol">Δ</span>
+    <span class="math-symbol">Σ</span>
+    <span class="math-symbol">λ</span>
+    <span class="math-symbol">∫</span>
+    <span class="math-symbol">π</span>
+    <span class="math-symbol">∞</span>
+    <span class="math-symbol">√</span>
+    <span class="math-symbol">∂</span>
+    <span class="math-symbol">θ</span>
+    <span class="math-symbol">Ω</span>
+    <span class="math-symbol">∇</span>
+    <span class="math-symbol">ε</span>
+  </div>
+  <div class="container" style="position: relative; z-index: 1;">
     <div class="row">
       <div class="col-lg-8">
         <h1 class="text-white mb-3" style="font-size: 2.5rem; font-weight: 600;">Amina Anna Mahamane</h1>
@@ -235,7 +355,7 @@
         <h5 style="font-weight: 600; margin-bottom: 4px;">University of Ottawa</h5>
         <p class="text-muted mb-1">Honours Joint BSc. in Computer Science and Mathematics</p>
         <p class="text-muted mb-1">2021 – 2026</p>
-        <p class="mb-0" style="color: #41228e; font-weight: 500;">Magna Cum Laude</p>
+        <p class="mb-0" style="color: #1a1a2e; font-weight: 500;">Magna Cum Laude</p>
       </div>
     </div>
   </div>
